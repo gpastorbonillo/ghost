@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: PersistentVolumeClaim 
+metadata: 
+  namespace: ghost 
+  name: ghost
+  labels: 
+    app: ghost 
+spec: 
+  volumeName: "ghost" 
+  accessModes: 
+  - ReadWriteMany 
+  resources: 
+    requests: 
+      storage: "5Gi"
